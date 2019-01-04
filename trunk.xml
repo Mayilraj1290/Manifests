@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote  name="bitbucket" fetch="ssh://git@bitbucket.org/expressplaydevteam" sync-j="4" sync-c="true" />
+
+        <default revision="master" remote="bitbucket" />
+
+        <project path="."                                          name="client"                 revision="master" />
+        <project path="."                                          name="Documents"              revision="master" />
+        <project path="."                                          name="Server"                 revision="master" />
+        <project path="."                                          name="Tools"                  revision="master" />
+        <project path="ThirdParty/Atomix"                          name="atomix"                 revision="master" />
+        <project path="ThirdParty/Neptune"                         name="neptune"                revision="master" />
+        <project path="ThirdParty/Sushi/ThirdParty/LibTomCrypt"    name="libtomcrypt"            revision="lite"/>
+        <project path="ThirdParty/SimpleTestingFramework"          name="simpletestingframework" revision="master"/>
+        <project path="ThirdParty/Sockeye"                         name="sockeye"                revision="lite" />
+        <project path="ThirdParty/Sushi"                           name="sushi"                  revision="master" />
+        <project path="ThirdParty/Ts2"                             name="ts2"                    revision="master" />
+        <project path="ThirdParty/ExpressplayCA"                   name="expressplayca"          revision="master" >
+                <linkfile dest="Build/addon" src="Build" />
+        </project>
+</manifest>
